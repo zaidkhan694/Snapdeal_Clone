@@ -1,0 +1,357 @@
+
+.container
+{
+    width: 100%;
+    background-color:#e40046;
+    height: 70px;
+    display: flex;
+    flex-wrap: wrap;
+    position: sticky;
+    overflow:hidden;
+}
+.logo
+{
+position: relative;
+left: 60px;
+top: 15px;
+}
+.container ul li a .title1
+{
+text-decoration: none;
+color: white;
+}
+.grid
+{
+    height: 950px;
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-gap:15px;
+    margin: 10px 50px;
+    grid-auto-rows: minmax(100px, auto);
+}
+.item
+{
+    background-color:rgba(241, 237, 237, 0.925);
+}
+.form
+{
+    position: relative;
+    left: 10%;
+    top: 20px;
+}
+#text
+{
+    width:600px;
+    height: 50%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 1px;
+    border: none;
+    font-size: 13px;
+    padding-left: 25px;
+}
+.button
+{
+    height: 51%;
+    width: 120px;
+    position: relative;
+    left: -5.2px;
+    background-color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: none;
+    color: white;
+     border-radius: 1px;
+     font-size: 13px;
+     cursor: pointer;
+}
+.button:hover
+{
+    background-color: rgb(37, 36, 36);
+}
+.cart{
+    position: relative;
+    left: 20%;
+    top: 33%;
+    text-decoration: none;
+    font-size: 15px;
+}
+.signin
+{
+    position: relative;
+    left: 25%;
+    top: 30%;
+    text-decoration: none;
+    font-size: 15px;
+}
+.userim
+{
+    position: relative;
+    left: 15px;
+    top: 5px;
+}
+.cartim
+{
+    position: relative;
+    left: 15px;
+    top: 3px;
+}
+nav .icons
+{
+    position: relative;
+    left: 70%;
+}
+.name
+{
+    color: white;
+    position: relative;
+    top: 5px;
+}
+.name:hover
+{
+    color: rgba(0, 0, 0, 0.884);
+}
+.offer
+{
+    width: 30px;
+    margin-left: 10px;
+}
+.offertxt
+{
+    text-decoration: none;
+    margin-left: 10px;
+}
+.category , .seeall
+{
+    margin-left: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+}
+.sidebar
+{
+    margin-left: 6px;
+}
+ul li 
+{
+    list-style-type:none;
+}
+ul li a 
+{
+    text-decoration: none;
+}
+ul li a .title
+{
+    position: relative;
+    top: 2px;
+    left: 2px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+    color: grey;
+}
+ul li a .title1
+{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+    color: grey;
+}
+.logint
+{
+    position: relative;
+    top: -6px;
+}
+.seeall
+{
+    margin-left: 38px;
+    text-decoration: none;
+    color: cornflowerblue;
+}
+.cartimg
+{
+position: relative;
+top: 5px;
+}
+.itemnav2
+{
+    grid-auto-rows: minmax(200px , auto);
+}
+.ads1
+{
+    width: 100%;
+    border-radius: 4px;
+}
+.linkss
+{
+    text-decoration: none;
+    position: relative;
+    margin: 40px 35px;
+    width: 100%;
+    text-align: center;
+    top: 10px;
+    left: 50px; 
+    color: gray;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12.5px ;
+}
+.linkss:hover
+{
+    color: black;
+}
+.pinimg
+{
+margin: 10px 60px;
+}
+#pintxt
+{
+    text-align: center;
+    color: gray;
+    font-size: 12px;
+}
+.txtt
+{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14.5px ;
+    color: grey;
+}
+#pin
+{
+    width: 90%;
+    position: relative;
+    left: 10px;
+    border: none;
+    border: solid 1px #e5e5e5;
+    border-radius: 1.9px;
+    height: 35px;
+    font-size: 12px;
+    padding-left: 10px;
+    border: solid 1px #e5e5e5;
+}
+.sbmtpin
+{
+    position: relative;
+    left:45px;
+    height: 35px;
+    text-transform: uppercase;
+    border-radius: 3px;
+    width: 60%;
+    font-size: 12px;
+    color: white;
+    background-color: #333;
+    border: none;
+    top: 20px;
+}
+.nav1 , .nav2 ,.nav3
+{
+    border-radius: 4px;
+}
+.title2
+{
+    color: grey;
+    font-size: 12px;
+    position: relative;
+    right: 10px;
+}
+.icon2
+{
+    position: relative;
+    right: 10px;
+}
+.nav2{
+    /* overflow: hidden; */
+}
+#sdtxt
+{
+    text-align: center;
+    font-size: 13px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: grey;
+    position: relative;
+    top: -15px;
+}
+.formtxt
+{
+    text-decoration: none;
+}
+.two
+{
+margin-top: 100px;
+}
+.sdimg
+{
+margin-top: 40px;
+background-size: cover;
+margin-left: 20px;
+}
+.lg{
+width: 50px;
+border: 1px solid black;
+padding: 10px 55px;
+text-decoration: none;
+text-align: center;
+margin-left: 45px;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+font-size: 12px;
+background-color: rgba(0, 0, 0, 0.87);
+color: white;
+border-radius: 3px;
+}
+.line
+{
+    margin-top: 50px;
+    text-align: center;
+}
+.member , .reg{
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+    text-align: center;
+}
+.reg
+{
+    color:#25a8ed;
+}
+.font
+{
+    margin-top:50px;
+    margin-left: 25px;
+}
+.products
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 125px 125px 125px;
+}
+.section
+{
+    align-items: center;
+    margin-left: 50px;
+}
+.text3
+{
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+    color: gray;
+}
+.price
+{
+    color: black;
+    position: relative;
+    left: 10px;
+    bottom: 40px;
+}
+.detail
+{
+    position: relative;
+    left: 10px;
+    bottom: 12px;
+}
+.star
+{
+    position: relative;
+    left: 10px;
+    bottom: 30px;
+}
+.discount
+{
+    color: gray;
+    text-decoration-line: line-through;
+}

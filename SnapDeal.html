@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="snapdeal.css"> -->
+    <title>SnapDeal</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+
+.container
+{
+    width: 100%;
+    background-color:#e40046;
+    height: 70px;
+    display: flex;
+    flex-wrap: wrap;
+    position: sticky;
+    overflow:hidden;
+}
+.logo
+{
+position: relative;
+left: 60px;
+top: 20px;
+}
+.container ul li a .title1
+{
+text-decoration: none;
+color: white;
+}
+.grid
+{
+    height: 950px;
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-gap:15px;
+    margin: 10px 50px;
+    grid-auto-rows: minmax(100px, auto);
+}
+.item
+{
+    background-color:rgba(241, 237, 237, 0.925);
+}
+.form
+{
+    position: relative;
+    left: 10%;
+    top: 20px;
+}
+#text
+{
+    width:600px;
+    height: 50%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 1px;
+    border: none;
+    font-size: 13px;
+    padding-left: 25px;
+}
+.button
+{
+    height: 51%;
+    width: 120px;
+    position: relative;
+    left: -5.2px;
+    background-color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: none;
+    color: white;
+     border-radius: 1px;
+     font-size: 13px;
+     cursor: pointer;
+}
+.button:hover
+{
+    background-color: rgb(37, 36, 36);
+    opacity: 1.5;
+}
+.cart{
+    position: relative;
+    left: 20%;
+    top: 33%;
+    text-decoration: none;
+    font-size: 15px;
+}
+.signin
+{
+    position: relative;
+    left: 25%;
+    top: 30%;
+    text-decoration: none;
+    font-size: 15px;
+}
+.userim
+{
+    position: relative;
+    left: 15px;
+    top: 8px;
+}
+.cartim
+{
+    position: relative;
+    left: 15px;
+    top: 8px;
+}
+nav .icons
+{
+    position: relative;
+    left: 70%;
+}
+.name
+{
+    color: white;
+    position: relative;
+    top: 5px;
+}
+.name:hover
+{
+    color: rgba(0, 0, 0, 0.884);
+    opacity: 1.5;
+}
+.offer
+{
+    width: 30px;
+    margin-left: 10px;
+}
+.offertxt
+{
+    text-decoration: none;
+    margin-left: 10px;
+}
+.category , .seeall
+{
+    margin-left: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+}
+.sidebar
+{
+    margin-left: 6px;
+}
+ul li 
+{
+    list-style-type:none;
+}
+ul li a 
+{
+    text-decoration: none;
+}
+ul li a .title
+{
+    position: relative;
+    top: 2px;
+    left: 2px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+    color: grey;
+}
+ul li a .title1
+{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+    color: grey;
+}
+.logint
+{
+    position: relative;
+    top: -6px;
+}
+.seeall
+{
+    margin-left: 38px;
+    text-decoration: none;
+    color: cornflowerblue;
+}
+.cartimg
+{
+position: relative;
+top: 5px;
+}
+.itemnav2
+{
+    grid-auto-rows: minmax(200px , auto);
+}
+.ads1
+{
+    width: 100%;
+    border-radius: 4px;
+    background-color: white;
+}
+.linkss
+{
+    text-decoration: none;
+    position: relative;
+    color: gray;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12.5px ;
+    margin: 15px 40px;
+}
+.linkss:hover
+{
+    color: black;
+    opacity: 1.5;
+}
+.linkk
+{
+    display: flex;
+    justify-content: space-between;
+}
+.pinimg
+{
+    margin: 20px 35px;
+    image-resolution: 30%;
+}
+#pintxt
+{
+    text-align: center;
+    color: gray;
+    font-size: 12px;
+}
+.txtt
+{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14.5px ;
+    color: grey;
+}
+#pin
+{
+    width: 90%;
+    position: relative;
+    left: 10px;
+    border: none;
+    border: solid 1px #e5e5e5;
+    border-radius: 1.9px;
+    height: 35px;
+    font-size: 12px;
+    padding-left: 10px;
+    border: solid 1px #e5e5e5;
+}
+.sbmtpin
+{
+    position: relative;
+    left:45px;
+    height: 35px;
+    text-transform: uppercase;
+    border-radius: 3px;
+    width: 60%;
+    font-size: 12px;
+    color: white;
+    background-color: #333;
+    border: none;
+    top: 20px;
+    cursor: pointer;
+}
+.sbmtpin:hover
+{
+    background-color: rgba(66, 61, 61, 0.979);
+}
+.nav1 , .nav2 ,.nav3
+{
+    border-radius: 4px;
+}
+.title2
+{
+    color: grey;
+    font-size: 12px;
+    position: relative;
+    right: 10px;
+}
+.icon2
+{
+    position: relative;
+    right: 10px;
+}
+
+#sdtxt
+{
+    text-align: center;
+    font-size: 13px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: grey;
+    position: relative;
+    top: 20px;
+}
+.formtxt
+{
+    text-decoration: none;
+}
+.two
+{
+margin-top: 100px;
+overflow: hidden;
+}
+.sdimg
+{
+margin-top: 40px;
+background-size: cover;
+background-color: #e40046;
+padding: 20px 20px ;
+}
+.lg{
+width: 50px;
+border: 1px solid black;
+padding: 10px 52px;
+text-decoration: none;
+text-align: center;
+margin-left: 45px;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+font-size: 12px;
+background-color: rgba(0, 0, 0, 0.87);
+color: white;
+border-radius: 3px;
+position: relative;
+top: 30px;
+}
+.lg:hover
+{
+    background-color: rgba(66, 61, 61, 0.979);
+}
+.line
+{
+    margin-top: 70px;
+    text-align: center;
+}
+.member , .reg{
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+    text-align: center;
+}
+.reg
+{
+    color:#25a8ed;
+}
+.font
+{
+    margin-top:25px;
+    margin-left: 25px;
+    height: 3vh;
+}
+.products
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 125px 125px 125px;
+    background-color: white;
+}
+.section
+{
+    align-items: center;
+    margin:20px 50px;
+}
+.text3
+{
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+    color: gray;
+}
+.price
+{
+    color: black;
+    position: relative;
+    left: 10px;
+    bottom: 40px;
+}
+.detail
+{
+    position: relative;
+    left: 10px;
+    bottom: 12px;
+}
+.star
+{
+    position: relative;
+    left: 10px;
+    bottom: 30px;
+}
+.discount
+{
+    color: gray;
+    text-decoration-line: line-through;
+}
+.advertisement
+{
+    background-color: white;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a class="logo" href=""><img src="https://i3.sdlcdn.com/img/snapdeal/darwin/logo/sdLatestLogo.svg"  width="150px" alt=""></a>
+        <form class="form" action="">
+            <input type="text " name="text" id="text" placeholder="Search Products & Brands">
+            <input type="submit" class="button" value= "Search" >
+        </form>
+        <a class="cart" href="">
+            <span class="name">Cart</span>
+            <span class="cicon"><img class="cartim" src="/shopping-cart-64.png" width="20px" alt="">
+            </span>
+        </a>
+        <a class="signin" href="/signinform.html">
+            <span class="name">Sign in</span>
+            <span class="usericon"><img class="userim" src="/toppng.com-circled-user-icon-user-pro-icon-2240x2240.png"  width="25px" alt=""></span>
+        </a>
+    </div>
+<div class="grid">
+    <div class="item nav1">
+        <p class="category">TOP CATEGORIES</p>
+        <div class="sidebar">
+        <ul><li>
+            <a href="">
+                <span class="icon1"><img  src="https://n3.sdlcdn.com/imgs/d/h/3/Discount_Right_icon-f5105.png" width="25px" alt=""></span>
+                <span class="title">All Offer</span>
+            </a>
+        </li>
+    </ul>
+       <ul><li>
+           <a href="">
+               <span class="icon"><img src="https://i1.sdlcdn.com/img/leftnavicon09/30x30mobile2.png" width="25px" alt=""></span>
+               <span class="title">Mobile & Tablets</span>
+           </a>
+       </li></ul>
+       <ul>
+           <li>
+               <a href="">
+                   <span class="icon"><img src="https://n2.sdlcdn.com/imgs/d/2/c/Electronic-6212c.png" width="25px" alt=""></span>
+                   <span class="title">Electronics</span>
+               </a>
+           </li>
+       </ul>
+       <ul>
+           <li>
+               <a href="">
+                   <span class="icon"><img src="https://n2.sdlcdn.com/imgs/d/2/c/ComputerGaming-a02cf.png" width="25px" alt=""></span>
+                   <span class="title">Computers & Gaming</span>
+               </a>
+           </li>
+       </ul>
+       <ul>
+           <li>
+               <a href="">
+                   <span class="icon"><img src="https://n2.sdlcdn.com/imgs/c/0/x/Homekitchenfurnishing-3eda1.jpg" width="25px" alt=""></span>
+                   <span class="title"> Home & Kitchen</span>
+               </a>
+           </li>
+       </ul>
+       <p class="category"> MORE CATEGORIES</p>
+       <ul>
+           <li>
+               <a href="">
+                   <span class="title1">
+                       Men's Fashion
+                   </span>
+               </a>
+           </li>
+       </ul>
+       <ul>
+           <li>
+               <a href="">
+                   <span class="title1">
+                       Women's Fashion
+                   </span>
+               </a>
+           </li>
+       </ul>
+       <ul><li>
+           <a href="">
+               <span class="title1">Toys,Kids Fashion & More</span>
+           </a>
+       </li></ul>
+       <ul><li><a href="">
+           <span class="title1">Sports,Fitness & Outdoor</span>
+       </a></li></ul>
+       <ul><li>
+           <a href="">
+               <span class="title1">Beauty,Health & Needs</span>
+           </a>
+       </li></ul>
+       <ul><li>
+           <a href="">
+               <span class="title1">Car & Motorbike</span>
+           </a>
+       </li></ul>
+       <ul><li><a href="">
+           <span class="title1">Hobbies</span>
+       </a></li></ul>
+       <ul><li><a href="">
+           <span class="title1">Books & More</span>
+       </a></li></ul>
+       <a class="seeall" href="">See All Categories</a>
+       <p class="category">TRENDING SEARCHES</p>
+       <ul><li><a href="">
+           <span class="icon2"><img src="/314807_search_icon.png" width="20px" alt=""></span>
+           <span class="title2">TrackSuit Man</span>
+       </a></li></ul>
+       <ul><li><a href="">
+        <span class="icon2"><img src="/314807_search_icon.png" width="20px" alt=""></span>
+        <span class="title2">Missionwinterwear</span>
+    </a></li></ul>
+    <ul><li><a href="">
+        <span class="icon2"><img src="/314807_search_icon.png" width="20px" alt=""></span>
+        <span class="title2">Loafer Shoes Man</span>
+    </a></li></ul>
+    <ul><li><a href="">
+        <span class="icon2"><img src="/314807_search_icon.png" width="20px" alt=""></span>
+        <span class="title2">Car Bike Lights</span>
+    </a></li></ul>
+    <ul><li><a href="">
+        <span class="icon2"><img src="/314807_search_icon.png" width="20px" alt=""></span>
+        <span class="title2">Jacket Man</span>
+    </a></li></ul>
+    </div>
+    </div>
+    <div class="item nav2">
+        <div class="advertisement">
+        <a href="">
+        <img class="ads1" src="https://n4.sdlcdn.com/imgs/j/t/8/Web1min-cbb30.jpg" alt="">
+    </a>
+    <div class="linkk">
+    <a class="linkss" href="">SnapDeal</a>
+    <a class="linkss"href="">Download Our App</a>
+    <a class="linkss" href="">SweatShirt</a>
+    <a class="linkss" href="">SportsShoes</a>
+    <a class="linkss" href="">Tops & Tunics</a>
+</div>
+    </div>
+     <p class="font">RECENTLY VIEWED PRODUCTS</p>
+        <div class="products">
+         <div class="section">
+             <p><a class="tshirt" href=""><img src="https://n2.sdlcdn.com/imgs/j/o/r/large/Veirdo-100-Percent-Cotton-Green-SDL302182620-1-1ba35.jpeg" width="200px" alt=""></a></p>
+            <a class="text3 detail" href="">Veirdo 100 Percent Cotton <br> Green Color Block T-Shirt
+            <p><a class="text3 star" href=""><img src="/clipart2970219.png" width="60px" alt=""></a></p>
+        <p class="text3 price"> <span class="discount"> Rs 1,199</span> Rs 319</p></a>
+            
+                 
+         </div>
+         <div class="section">
+             <p> <a class="tshirt" href=""><img src="https://n2.sdlcdn.com/imgs/j/o/r/large/Veirdo-100-Percent-Cotton-Green-SDL302182620-1-1ba35.jpeg" width="200px" alt=""></a></p>
+             <a class="text3 detail" href="">Veirdo 100 Percent Cotton <br> Green Color Block T-Shirt
+                <p><a class="text3 star" href=""><img src="/clipart2970219.png" width="60px" alt=""></a></p>
+            <p class="text3 price"> <span class="discount"> Rs 1,199</span> Rs 319</p></a>
+         </div>
+         <div class="section">
+             <p> <a href=""><img src="https://n2.sdlcdn.com/imgs/j/o/r/large/Veirdo-100-Percent-Cotton-Green-SDL302182620-1-1ba35.jpeg" width="200px" alt=""></a></p>
+             <a class="text3 detail" href="">Veirdo 100 Percent Cotton <br> Green Color Block T-Shirt
+                <p><a class="text3 star" href=""><img src="/clipart2970219.png" width="60px" alt=""></a></p>
+            <p class="text3 price"> <span class="discount"> Rs 1,199</span> Rs 319</p></a>
+         </div>
+         </div>
+ </div>
+    <div class="item nav3">
+        <p class="pinimg"><img src="https://i1.sdlcdn.com/img/artboardNext.png" width="130px" alt=""></p>
+        <p class="txtt">Your Delivary Pincode</p>
+        <p id="pintxt">Enter your pincode to check <br> availability and faster delivary option</p>
+        <form action="">
+            <input type="text" inputmode="numeric" name="pin" id="pin" placeholder="Enter your Pincode">
+            <input type="submit" class="sbmtpin" value="Submit">
+        </form>
+        <div class="two">
+        <p class="sdimg"><img src="https://i3.sdlcdn.com/img/snapdeal/darwin/logo/sdLatestLogo.svg" width="200px" alt=""></p>
+        <p id="sdtxt">Login to your <br> Snapdeal Account</p>
+        <p><a class="lg" href="/signinform.html">LOG IN</a></p>
+        <p class="line"><a class="member" href="/signinform.html">New Member ? <span class="reg">Register</span></a></p>
+    </div>
+    </div>
+</div>
+</body>
+</html>
